@@ -1,0 +1,23 @@
+{
+  "name": "sashimi",
+  "version": "1.0.0",
+  "description": "Engagements while watching tv",
+  "author": "mishingo",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "nuxt": "^2.0.0",
+    "@nuxtjs/axios": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "autoprefixer": "^8.6.4",
+    "tailwindcss": "~0.6.6"
+  }
+}
