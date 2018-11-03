@@ -8,16 +8,21 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lambda": "npm-exec netlify-lambda serve function-src --config webpack.config.js"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "assert": "^1.4.1",
     "cross-env": "^5.2.0",
+    "mongodb": "^3.1.8",
+    "netlify-lambda": "^1.0.2",
     "nuxt": "^2.0.0",
-    "@nuxtjs/axios": "^5.0.0"
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0",
     "autoprefixer": "^8.6.4",
+    "nodemon": "^1.11.0",
     "tailwindcss": "~0.6.6"
   }
 }
