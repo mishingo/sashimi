@@ -9,9 +9,10 @@ const headers = {
 
 
 // Connection URL
-var url = 'mongodb://zebramongo:887t2Y3v99wE64w9@ds229373.mlab.com:29373/work_zebra';
-var dbname = "work_zebra";
-var collectionname = "Test";
+
+var url = 'mongodb://sashimi_db:7dmsckiU3rAyTm3t9866E693Jqh@sashimi-shard-00-00-obkvq.mongodb.net:27017,sashimi-shard-00-01-obkvq.mongodb.net:27017,sashimi-shard-00-02-obkvq.mongodb.net:27017/test?ssl=true&replicaSet=Sashimi-shard-0&authSource=admin&retryWrites=true';
+var dbname = "testdb";
+var collectionname = "testcollection";
 
 exports.handler = (event, context, callback) => {
     MongoClient.connect(url, function (err, db) {
