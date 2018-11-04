@@ -20,6 +20,10 @@ export default {
 </script>
 
 <style>
+html{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #1D2129;
+  }
     .menu-btn{
         top: 30px;
         left: 20px;
