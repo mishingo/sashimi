@@ -8,7 +8,9 @@
         </div>
     
         <div class="flex items-center justify-center  text-white mr-6">
-            <img src="~/assets/images/logo.svg">
+            <nuxt-link :to="{ path: '/'}">
+                <img src="~/assets/images/logo.svg">
+            </nuxt-link>
         </div>
     </nav>
 </template>

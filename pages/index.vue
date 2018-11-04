@@ -7,11 +7,11 @@
     <div v-else>
       <div class="p-4">
         <div v-for="(show,index) in shows" :key="index">
-          <nuxt-link :to="{ path: `shows/${show.id}`}">
+          <nuxt-link :to="{ path: `shows/${show.id}`}" class="no-underline">
             <div class="bg-white w-full mt-4 rounded-t-lg shadow-lg home-card-image bg-cover bg-top bg-no-repeat" :style="{ backgroundImage: 'url(' + show.relationships.media.data[0].relationships.image.data.attributes.path + ')' }">
             </div>
             <div class="w-full rounded-b-lg py-8 px-4  bg-home-card">
-              <h3 class="text-white text-2xl">{{ show.attributes.promoTitle }} </h3>
+              <h3 class="text-white text-2xl font-normal no-underline">{{ show.attributes.promoTitle }} </h3>
             </div>
           </nuxt-link>
         </div>

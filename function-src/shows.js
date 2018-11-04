@@ -74,7 +74,6 @@ exports.handler = (event, context, callback) => {
             headers,
             body: JSON.stringify(response)
         });
-        console.log(JSON.stringify(response, null, 2));
     })
     .catch(function (error) {
         console.log(error);
